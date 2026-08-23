@@ -8,7 +8,7 @@ const projects = [
       "A full-stack platform for sharing academic resources with role-based access. Built with Next.js, React, Tailwind CSS, NestJS, Node.js, and PostgreSQL.",
     image: "/images/Unishare.png",
     technologies: ["Next.js", "React", "Tailwind CSS", "NestJS", "PostgreSQL"],
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_fullstackdevelopment-typescript-nestjs-ugcPost-7420757094708080640-9oFG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
 
   {
@@ -35,7 +35,7 @@ const projects = [
       "An HCI-based smart billing system using tangible interaction, automatic weight sensing, image-based product detection, and real-time price calculation.",
     image: "/images/Tui.jpeg",
     technologies: ["Arduino", "ESP32", "HCI"],
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_arduinoide-tangibleui-smartbilling-ugcPost-7420105767573184514-udO2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
 
   {
@@ -44,7 +44,7 @@ const projects = [
       "A responsive movie discovery application using React, Tailwind CSS, and the OMDb API with movie search, IMDb ratings, release dates, loading states, and error handling.",
     image: "/images/Movie.png",
     technologies: ["React", "Tailwind CSS", "OMDb API"],
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_reactjs-tailwindcss-frontenddevelopment-activity-7409927699986620416-Pw_l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
 
   {
@@ -53,7 +53,7 @@ const projects = [
       "An Arduino-based solar tracking system using light sensors to automatically rotate the solar panel toward the sun, with an LCD showing the real-time charge level.",
     image: "/images/Micro.jpg",
     technologies: ["Arduino", "IoT", "Embedded Systems"],
-    link: "https://drive.google.com/",
+    link: "https://drive.google.com/file/d/1o0aNST_9eLMRQKwmzzyA40d-k-EzVU_9/view?usp=drivesdk",
   },
 
   {
@@ -62,7 +62,7 @@ const projects = [
       "A frontend food delivery application featuring an interactive menu, Add to Cart functionality, local storage cart management, order tracking, and responsive UI/UX.",
     image: "/images/Eatup.jpeg",
     technologies: ["Next.js", "React", "Tailwind CSS"],
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_excited-to-share-my-latest-project-eatup-activity-7412758175512408064-RMxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
 
   {
@@ -71,7 +71,7 @@ const projects = [
       "Conducted data preprocessing, visualization, and analysis on the Iris dataset using R, including plots, boxplots, and statistical summaries.",
     image: "/images/Data Science.jpeg",
     technologies: ["R", "Data Science", "Data Visualization"],
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_datascience-rprogramming-eda-activity-7405945049395404801-lczG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
 
   {
@@ -80,7 +80,7 @@ const projects = [
       "Built a full 2D city scene using C++ and OpenGL with moving cars, trees, buildings, a river, smooth animations, and dynamic car speed controls.",
     image: "/images/Graphics.png",
     technologies: ["C++", "OpenGL", "Computer Graphics"],
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_just-finished-building-an-animated-2d-activity-7405320842966093824--v31?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
 
   {
@@ -89,7 +89,7 @@ const projects = [
       "Designed a 3D building structure using AutoCAD, focusing on accurate room dimensions, layout planning, and structural visualization.",
     image: "/images/cad.png",
     technologies: ["AutoCAD", "3D Design"],
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_i-designed-a-full-3d-building-model-in-autocad-activity-7405187631229292545-piqS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
 
   {
@@ -98,7 +98,7 @@ const projects = [
       "Developed an animated 2D scene in C++ using OpenGL featuring buildings, roads, moving cars, and a rising sun with interactive controls.",
     image: "/images/Gp 2.png",
     technologies: ["C++", "OpenGL", "Animation"],
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_opengl-computergraphics-cplusplus-activity-7406300531654172672-TpyU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo ",
   },
 ];
 
