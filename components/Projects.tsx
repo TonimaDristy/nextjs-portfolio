@@ -1,5 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ChevronDown } from "lucide-react";
 
 const projects = [
   {
@@ -10,7 +13,6 @@ const projects = [
     technologies: ["Next.js", "React", "Tailwind CSS", "NestJS", "PostgreSQL"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_fullstackdevelopment-typescript-nestjs-ugcPost-7420757094708080640-9oFG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
-
   {
     title: "Luminary – School Web Application",
     description:
@@ -19,7 +21,6 @@ const projects = [
     technologies: ["PHP", "MySQL", "HTML", "CSS"],
     link: "https://github.com/TonimaDristy/School-Web",
   },
-
   {
     title: "Trip Planner – Travel Agency Web App",
     description:
@@ -28,7 +29,6 @@ const projects = [
     technologies: ["React", "Next.js", "Tailwind CSS"],
     link: "https://tripplanner-44da7c.netlify.app/",
   },
-
   {
     title: "Tangible User Interface (TUI)",
     description:
@@ -37,7 +37,6 @@ const projects = [
     technologies: ["Arduino", "ESP32", "HCI"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_arduinoide-tangibleui-smartbilling-ugcPost-7420105767573184514-udO2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
-
   {
     title: "Movie Discovery Web App",
     description:
@@ -46,7 +45,6 @@ const projects = [
     technologies: ["React", "Tailwind CSS", "OMDb API"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_reactjs-tailwindcss-frontenddevelopment-activity-7409927699986620416-Pw_l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
-
   {
     title: "Dual Axis Solar Tracking System",
     description:
@@ -55,7 +53,6 @@ const projects = [
     technologies: ["Arduino", "IoT", "Embedded Systems"],
     link: "https://drive.google.com/file/d/1o0aNST_9eLMRQKwmzzyA40d-k-EzVU_9/view?usp=drivesdk",
   },
-
   {
     title: "EatUp – Food Delivery App",
     description:
@@ -64,7 +61,6 @@ const projects = [
     technologies: ["Next.js", "React", "Tailwind CSS"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_excited-to-share-my-latest-project-eatup-activity-7412758175512408064-RMxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
-
   {
     title: "Data Science – Iris Dataset Analysis",
     description:
@@ -73,7 +69,6 @@ const projects = [
     technologies: ["R", "Data Science", "Data Visualization"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_datascience-rprogramming-eda-activity-7405945049395404801-lczG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
-
   {
     title: "Colorful 2D Cityscape",
     description:
@@ -82,7 +77,6 @@ const projects = [
     technologies: ["C++", "OpenGL", "Computer Graphics"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_just-finished-building-an-animated-2d-activity-7405320842966093824--v31?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
-
   {
     title: "3D Building Model – AutoCAD",
     description:
@@ -91,18 +85,22 @@ const projects = [
     technologies: ["AutoCAD", "3D Design"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_i-designed-a-full-3d-building-model-in-autocad-activity-7405187631229292545-piqS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
-
   {
     title: "2D Moving Cars Scene",
     description:
       "Developed an animated 2D scene in C++ using OpenGL featuring buildings, roads, moving cars, and a rising sun with interactive controls.",
     image: "/images/Gp 2.png",
     technologies: ["C++", "OpenGL", "Animation"],
-    link: "https://www.linkedin.com/posts/tonima-dristy650_opengl-computergraphics-cplusplus-activity-7406300531654172672-TpyU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo ",
+    link: "https://www.linkedin.com/posts/tonima-dristy650_opengl-computergraphics-cplusplus-activity-7406300531654172672-TpyU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
 ];
 
 export default function Projects() {
+  const [showMore, setShowMore] = useState(false);
+
+  // Show 6 projects initially, or all projects after clicking See More
+  const displayedProjects = showMore ? projects : projects.slice(0, 6);
+
   return (
     <section id="work" className="bg-black px-6 py-24 text-white">
       <div className="mx-auto max-w-7xl">
@@ -115,7 +113,7 @@ export default function Projects() {
 
         {/* Project grid */}
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
+          {displayedProjects.map((project) => (
             <div
               key={project.title}
               className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-900/30"
@@ -129,7 +127,6 @@ export default function Projects() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
 
-                {/* Dark overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
               </div>
 
@@ -167,6 +164,24 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
+        {/* See More / See Less Button */}
+        {projects.length > 6 && (
+          <div className="mt-12 flex justify-center">
+            <button
+              onClick={() => setShowMore(!showMore)}
+              className="inline-flex items-center gap-2 rounded-xl border border-purple-500/50 bg-purple-500/10 px-6 py-3 font-semibold text-purple-300 transition hover:bg-purple-600 hover:text-white"
+            >
+              {showMore ? "See Less" : "See More"}
+              <ChevronDown
+                size={18}
+                className={`transition-transform duration-300 ${
+                  showMore ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
