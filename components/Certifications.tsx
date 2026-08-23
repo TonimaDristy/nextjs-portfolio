@@ -17,7 +17,7 @@ const certifications = [
     date: "2026",
     description:
       "Earned certification for completing an internship focused on frontend development, backend development, API integration, AI APIs, and real-world application development.",
-    certificateLink: "#",
+    certificateLink: "/images/web dev certificate.JPG",
   },
   {
     icon: Languages,
