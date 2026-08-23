@@ -1,10 +1,13 @@
 import Navbar from "@/components/Navbar";
+import About from "@/components/About";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
     <>
       <Navbar />
 
+      {/* Home / Hero Section */}
       <main
         id="home"
         className="flex min-h-screen items-center justify-center bg-black text-white"
@@ -19,6 +22,10 @@ export default function Home() {
           <p className="mt-4 text-xl text-gray-400">My Next.js Portfolio</p>
         </div>
       </main>
+
+      {/* About Section */}
+      <About />
+      <Services />
     </>
   );
 }
