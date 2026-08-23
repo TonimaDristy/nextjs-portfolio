@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Projects from "@/components/Projects";
+import Certifications from "@/components/Certifications";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -26,6 +29,9 @@ export default function Home() {
       {/* About Section */}
       <About />
       <Services />
+      <Projects />
+      <Certifications />
+      <Contact />
     </>
   );
 }
