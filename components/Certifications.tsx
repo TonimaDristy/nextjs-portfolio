@@ -26,7 +26,7 @@ const certifications = [
     date: "2025",
     description:
       "Completed an IELTS Masterclass focused on improving English communication, academic writing, and speaking skills for professional and international environments.",
-    certificateLink: "#",
+    certificateLink: "/images/Ielts.png",
   },
 ];
 
