@@ -1,7 +1,7 @@
 "use client";
 
-import { Mail, Phone, MapPin, Send, Download } from "lucide-react";
 import { FormEvent, useState } from "react";
+import { Mail, Phone, MapPin, Send, Download } from "lucide-react";
 
 export default function Contact() {
   const [isSending, setIsSending] = useState(false);
@@ -14,12 +14,14 @@ export default function Contact() {
     event.preventDefault();
 
     const form = event.currentTarget;
+
     setIsSending(true);
     setMessageSent(false);
 
     try {
       await fetch(scriptURL, {
         method: "POST",
+        mode: "no-cors",
         body: new FormData(form),
       });
 
@@ -126,7 +128,6 @@ export default function Contact() {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                {/* LinkedIn */}
                 <a
                   href="https://www.linkedin.com/in/tonima-dristy650"
                   target="_blank"
@@ -136,7 +137,6 @@ export default function Contact() {
                   LinkedIn
                 </a>
 
-                {/* GitHub */}
                 <a
                   href="https://github.com/TonimaDristy"
                   target="_blank"
@@ -146,7 +146,6 @@ export default function Contact() {
                   GitHub
                 </a>
 
-                {/* Facebook */}
                 <a
                   href="https://www.facebook.com/TI.Dristy.33"
                   target="_blank"
@@ -185,10 +184,10 @@ export default function Contact() {
 
                 <input
                   id="name"
-                  type="text"
                   name="Name"
-                  placeholder="Enter your name"
+                  type="text"
                   required
+                  placeholder="Enter your name"
                   className="w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-white outline-none transition placeholder:text-gray-600 focus:border-purple-500"
                 />
               </div>
@@ -204,10 +203,10 @@ export default function Contact() {
 
                 <input
                   id="email"
-                  type="email"
                   name="Email"
-                  placeholder="Enter your email"
+                  type="email"
                   required
+                  placeholder="Enter your email"
                   className="w-full rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-white outline-none transition placeholder:text-gray-600 focus:border-purple-500"
                 />
               </div>
@@ -225,6 +224,7 @@ export default function Contact() {
                   id="message"
                   name="Message"
                   rows={6}
+                  required
                   placeholder="Write your message..."
                   className="w-full resize-none rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-white outline-none transition placeholder:text-gray-600 focus:border-purple-500"
                 />
