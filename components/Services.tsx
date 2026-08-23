@@ -2,23 +2,24 @@ import { Code2, Database, Laptop } from "lucide-react";
 
 const services = [
   {
-    icon: Code2,
-    title: "Web Development Internship",
-    description:
-      "Completed a Web Development internship at D Huda Tech UK Limited, where I built responsive and user-friendly interfaces, improved application performance, fixed bugs through testing, and integrated AI APIs such as OpenAI, Gemini, and Hugging Face.",
-  },
-  {
     icon: Database,
     title: "Software Engineer Internship",
     description:
       "Currently working as a Software Engineer Intern at Mustaruusu Technology Asia, contributing to API integration, backend development, debugging, Git workflows, and responsive user interface development using HTML, CSS, JavaScript, and React.",
   },
   {
-    icon: Laptop,
-    title: "Human Computer Interaction",
+    icon: Code2,
+    title: "Web Development Internship",
     description:
-      "Developed a Tangible User Interface-based smart billing system using ESP32, Arduino, load cell, rotary encoder, slider, and ESP32-CAM for physical interaction and vision-based product recognition.",
+      "Completed a Web Development internship at D Huda Tech UK Limited, where I built responsive and user-friendly interfaces, improved application performance, fixed bugs through testing, and integrated AI APIs such as OpenAI, Gemini, and Hugging Face.",
   },
+
+  //   {
+  //     icon: Laptop,
+  //     title: "Human Computer Interaction",
+  //     description:
+  //       "Developed a Tangible User Interface-based smart billing system using ESP32, Arduino, load cell, rotary encoder, slider, and ESP32-CAM for physical interaction and vision-based product recognition.",
+  //   },
 ];
 
 export default function Services() {
@@ -26,10 +27,10 @@ export default function Services() {
     <section id="services" className="bg-black px-6 py-24 text-white">
       <div className="mx-auto max-w-7xl">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-purple-400">
-          What I Do
+          Professional Journey
         </p>
 
-        <h2 className="text-4xl font-bold md:text-5xl">Services</h2>
+        <h2 className="text-4xl font-bold md:text-5xl">Experiences</h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => {
