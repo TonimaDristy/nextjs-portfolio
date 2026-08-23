@@ -13,7 +13,7 @@ export default function About() {
           <img
             src="/images/user.png.jpg"
             alt="Tonima Islam Dristy"
-            className="w-full rounded-2xl object-cover"
+            className="mx-auto h-[690px] w-3/4 rounded-2xl object-cover"
           />
         </div>
 
