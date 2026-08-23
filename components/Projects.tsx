@@ -131,11 +131,6 @@ export default function Projects() {
 
                 {/* Dark overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-
-                {/* View Project badge */}
-                <div className="absolute bottom-4 right-4 rounded-full bg-purple-700/90 px-4 py-2 text-xs font-semibold shadow-lg">
-                  View Project
-                </div>
               </div>
 
               {/* Content */}
