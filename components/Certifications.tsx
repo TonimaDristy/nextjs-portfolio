@@ -1,4 +1,5 @@
 import { Award, BadgeCheck, Languages } from "lucide-react";
+
 const certifications = [
   {
     icon: Award,
@@ -7,6 +8,7 @@ const certifications = [
     date: "2025",
     description:
       "Completed hands-on training on AI tools, automation workflows, and system visualization using modern AI technologies.",
+    certificateLink: "/images/ai-certificate.jpg",
   },
   {
     icon: BadgeCheck,
@@ -15,6 +17,7 @@ const certifications = [
     date: "2026",
     description:
       "Earned certification for completing an internship focused on frontend development, backend development, API integration, AI APIs, and real-world application development.",
+    certificateLink: "#",
   },
   {
     icon: Languages,
@@ -23,6 +26,7 @@ const certifications = [
     date: "2025",
     description:
       "Completed an IELTS Masterclass focused on improving English communication, academic writing, and speaking skills for professional and international environments.",
+    certificateLink: "#",
   },
 ];
 
@@ -71,13 +75,17 @@ export default function Certifications() {
                   {certificate.description}
                 </p>
 
-                {/* Button */}
-                <button
-                  type="button"
-                  className="mt-6 rounded-lg border border-purple-500/30 bg-purple-500/10 px-4 py-2 text-sm font-medium text-purple-300 transition hover:bg-purple-500 hover:text-white"
-                >
-                  View Certificate
-                </button>
+                {/* View Certificate */}
+                {certificate.certificateLink !== "#" && (
+                  <a
+                    href={certificate.certificateLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-block rounded-lg border border-purple-500/30 bg-purple-500/10 px-4 py-2 text-sm font-medium text-purple-300 transition hover:bg-purple-500 hover:text-white"
+                  >
+                    View Certificate
+                  </a>
+                )}
               </div>
             );
           })}
