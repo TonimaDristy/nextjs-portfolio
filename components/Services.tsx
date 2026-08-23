@@ -1,4 +1,4 @@
-import { Code2, Database, Laptop } from "lucide-react";
+import { Code2, Database } from "lucide-react";
 
 const services = [
   {
@@ -13,13 +13,6 @@ const services = [
     description:
       "Completed a Web Development internship at D Huda Tech UK Limited, where I built responsive and user-friendly interfaces, improved application performance, fixed bugs through testing, and integrated AI APIs such as OpenAI, Gemini, and Hugging Face.",
   },
-
-  //   {
-  //     icon: Laptop,
-  //     title: "Human Computer Interaction",
-  //     description:
-  //       "Developed a Tangible User Interface-based smart billing system using ESP32, Arduino, load cell, rotary encoder, slider, and ESP32-CAM for physical interaction and vision-based product recognition.",
-  //   },
 ];
 
 export default function Services() {
@@ -32,23 +25,26 @@ export default function Services() {
 
         <h2 className="text-4xl font-bold md:text-5xl">Experiences</h2>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {/* Experience Cards */}
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
           {services.map((service) => {
             const Icon = service.icon;
 
             return (
               <div
                 key={service.title}
-                className="group rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/50 hover:bg-purple-950/30"
+                className="group min-h-[350px] rounded-2xl border border-white/10 bg-white/5 p-10 transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/50 hover:bg-purple-950/30"
               >
                 <Icon
-                  size={45}
-                  className="mb-6 text-purple-400 transition-transform duration-300 group-hover:scale-110"
+                  size={50}
+                  className="mb-8 text-purple-400 transition-transform duration-300 group-hover:scale-110"
                 />
 
-                <h3 className="text-2xl font-semibold">{service.title}</h3>
+                <h3 className="text-2xl font-semibold md:text-3xl">
+                  {service.title}
+                </h3>
 
-                <p className="mt-4 leading-7 text-gray-400">
+                <p className="mt-5 text-lg leading-8 text-gray-400">
                   {service.description}
                 </p>
               </div>
