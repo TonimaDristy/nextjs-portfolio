@@ -111,13 +111,14 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="w-full max-w-md translate-x-0 rounded-2xl border border-cyan-400/20 bg-white/[0.07] p-6 shadow-2xl shadow-cyan-900/20 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-cyan-400/50 hover:bg-cyan-500/10 lg:translate-x-8">
+            <div className="w-full max-w-md translate-x-0 rounded-2xl border border-purple-400/20 bg-white/[0.07] p-6 shadow-2xl shadow-cyan-900/20 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-cyan-400/50 hover:bg-purple-500/10 lg:translate-x-8">
               <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500/20 text-xl">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-purple-500/20 text-xl">
                   🤖
                 </div>
-
-                <h3 className="text-lg font-bold">AI & Data Science</h3>
+                <h3 className="text-lg font-bold text-purple-400">
+                  AI & Data Science
+                </h3>{" "}
               </div>
 
               <p className="text-sm leading-7 text-gray-400">
