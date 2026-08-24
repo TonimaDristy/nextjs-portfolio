@@ -100,6 +100,19 @@ const projects = [
     link: "https://www.linkedin.com/posts/tonima-dristy650_just-finished-building-an-animated-2d-activity-7405320842966093824--v31?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
   },
   {
+    title: "Real-Time Object Detection Using TinyML",
+    description:
+      "A research project focused on optimizing lightweight object detection models for resource-constrained IoT devices using quantization, pruning, and hardware-aware optimization.",
+    image: "/images/TinyML.png",
+    technologies: [
+      "Python",
+      "TinyML",
+      "Machine Learning",
+      "Model Optimization",
+      "IoT",
+    ],
+  },
+  {
     title: "3D Building Model – AutoCAD",
     description:
       "Designed a 3D building structure using AutoCAD, focusing on accurate room dimensions, layout planning, and structural visualization.",
@@ -114,19 +127,6 @@ const projects = [
     image: "/images/Gp 2.png",
     technologies: ["C++", "OpenGL", "Animation"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_opengl-computergraphics-cplusplus-activity-7406300531654172672-TpyU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
-  },
-  {
-    title: "Real-Time Object Detection Using TinyML",
-    description:
-      "A research project focused on optimizing lightweight object detection models for resource-constrained IoT devices using quantization, pruning, and hardware-aware optimization.",
-    image: "/images/TinyML.png",
-    technologies: [
-      "Python",
-      "TinyML",
-      "Machine Learning",
-      "Model Optimization",
-      "IoT",
-    ],
   },
 ];
 
