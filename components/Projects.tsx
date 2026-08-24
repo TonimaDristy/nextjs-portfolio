@@ -36,6 +36,14 @@ const projects = [
     link: "https://github.com/TonimaDristy/School-Web",
   },
   {
+    title: "MTR Technology – Business Solutions & Technology Services",
+    description:
+      "Contributed to developing and improving responsive web pages for MTR Technology, including reusable React components, responsive layouts, navigation features, and modern UI designs.",
+    image: "/images/MTR.png",
+    technologies: ["React", "JavaScript", "Tailwind CSS", "React Router"],
+    link: "https://mustaruusu.com/",
+  },
+  {
     title: "Trip Planner – Travel Agency Web App",
     description:
       "A responsive travel booking web application featuring Home, Tours, About, Contact, and Login/Signup pages with clean UI and smooth Next.js routing.",
@@ -106,6 +114,19 @@ const projects = [
     image: "/images/Gp 2.png",
     technologies: ["C++", "OpenGL", "Animation"],
     link: "https://www.linkedin.com/posts/tonima-dristy650_opengl-computergraphics-cplusplus-activity-7406300531654172672-TpyU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo",
+  },
+  {
+    title: "Real-Time Object Detection Using TinyML",
+    description:
+      "A research project focused on optimizing lightweight object detection models for resource-constrained IoT devices using quantization, pruning, and hardware-aware optimization.",
+    image: "/images/TinyML.png",
+    technologies: [
+      "Python",
+      "TinyML",
+      "Machine Learning",
+      "Model Optimization",
+      "IoT",
+    ],
   },
 ];
 
