@@ -186,15 +186,17 @@ export default function Projects() {
                 </div>
 
                 {/* Project link */}
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gray-300 transition hover:text-purple-400"
-                >
-                  View Project
-                  <ExternalLink size={16} />
-                </a>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gray-300 transition hover:text-purple-400"
+                  >
+                    View Project
+                    <ExternalLink size={16} />
+                  </a>
+                )}
               </div>
             </div>
           ))}
