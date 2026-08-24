@@ -40,9 +40,9 @@ export default function Home() {
             <h1 className="text-5xl font-extrabold leading-tight md:text-7xl lg:text-8xl">
               Tonima Islam
               <br />
-              <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-500 via-purple-400 to-violet-400 bg-clip-text text-transparent">
                 Dristy
-              </span>
+              </span>{" "}
             </h1>
 
             <p className="mt-6 text-xl font-medium text-gray-300 md:text-2xl">
