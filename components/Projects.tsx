@@ -6,6 +6,20 @@ import { ExternalLink, ChevronDown } from "lucide-react";
 
 const projects = [
   {
+    title: "ASD Detection Using Explainable Machine Learning",
+    description:
+      "Developed a machine learning framework for ASD screening across multiple age groups using data preprocessing, feature selection, model optimization, and SHAP-based Explainable AI.",
+    image: "/images/Poster.png",
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Feature Selection",
+      "SHAP",
+      "Explainable AI",
+    ],
+    link: "https://www.kaggle.com/code/tonimadristy/asd-detection-using-explainable-machine-learning",
+  },
+  {
     title: "UniShare – University Resource Sharing Platform",
     description:
       "A full-stack platform for sharing academic resources with role-based access. Built with Next.js, React, Tailwind CSS, NestJS, Node.js, and PostgreSQL.",
@@ -134,7 +148,7 @@ export default function Projects() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
 
-                <p className="mt-3 line-clamp-3 text-sm leading-6 text-gray-400">
+                <p className="mt-3 text-sm leading-6 text-gray-400 whitespace-normal break-words overflow-visible">
                   {project.description}
                 </p>
 
