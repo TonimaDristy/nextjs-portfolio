@@ -44,6 +44,14 @@ const projects = [
     link: "https://mustaruusu.com/",
   },
   {
+    title: "Complete Pro3AI – Programme Management Platform",
+    description:
+      "A responsive programme management platform featuring RAID-D, Resource Management, Planning, Procurement Management, and other project management features with interactive navigation and responsive UI.",
+    image: "/images/Pro3AI.png",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "React Router"],
+    link: "https://pro3-eta.vercel.app/",
+  },
+  {
     title: "Trip Planner – Travel Agency Web App",
     description:
       "A responsive travel booking web application featuring Home, Tours, About, Contact, and Login/Signup pages with clean UI and smooth Next.js routing.",
