@@ -22,7 +22,8 @@ export default function About() {
 
         <div className="grid items-start gap-12 md:grid-cols-2">
           {/* Image */}
-          <div className="flex justify-center">
+          <div className="mt-8 flex justify-center md:mt-28">
+            {" "}
             <img
               src="/images/user.png.jpg"
               alt="Tonima Islam Dristy"
