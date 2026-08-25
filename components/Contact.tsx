@@ -279,7 +279,7 @@ export default function Contact() {
         <div className="mt-20 border-t border-white/5 pt-8 text-center">
           <p className="text-sm text-gray-600">
             © 2026-Designed & Developed by Tonima Islam Dristy • Built with
-            Next.js, React & Tailwind CSS.{" "}
+            Next.js, React, TypeScript & Tailwind CSS.{" "}
           </p>
         </div>
       </div>

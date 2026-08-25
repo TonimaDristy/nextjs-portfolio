@@ -22,7 +22,7 @@ export default function Home() {
         {/* Pink Aurora */}
         <div className="aurora-four absolute -right-20 bottom-[-150px] h-[600px] w-[700px] rounded-full bg-fuchsia-700/10 blur-[180px]" />
 
-        {/* Soft center light */}
+        {/* Soft Center Light */}
         <div className="absolute left-1/2 top-[40%] h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-purple-500/[0.03] blur-[150px]" />
       </div>
 
@@ -36,7 +36,7 @@ export default function Home() {
           className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24"
         >
           <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-16 lg:flex-row">
-            {/* LEFT SIDE */}
+            {/* ================= LEFT SIDE ================= */}
             <div className="w-full text-center lg:w-[55%] lg:text-left">
               <p className="mb-4 text-lg font-medium uppercase tracking-[4px] text-purple-400 md:text-xl">
                 Hi, I am
@@ -60,24 +60,26 @@ export default function Home() {
                 digital solutions.
               </p>
 
-              {/* Buttons */}
+              {/* ================= BUTTONS ================= */}
               <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
+                {/* View My Work */}
                 <a
-                  href="#work"
+                  href="/#work"
                   className="rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 px-7 py-3 font-semibold shadow-lg shadow-purple-500/20 transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-purple-500/40"
                 >
                   View My Work →
                 </a>
 
+                {/* Contact Me */}
                 <a
-                  href="#Contact"
+                  href="/#contact"
                   className="rounded-full border border-purple-500/50 bg-white/5 px-7 py-3 font-semibold backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-purple-400 hover:bg-purple-500/10"
                 >
                   Contact Me
                 </a>
               </div>
 
-              {/* Tech Tags */}
+              {/* ================= TECH TAGS ================= */}
               <div className="mt-9 flex flex-wrap justify-center gap-2 lg:justify-start">
                 {[
                   "React.js",
@@ -97,7 +99,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* RIGHT SIDE CARDS */}
+            {/* ================= RIGHT SIDE CARDS ================= */}
             <div className="flex w-full flex-col items-center gap-5 lg:w-[40%] lg:items-end">
               {/* Card 1 */}
               <div className="w-full max-w-md rounded-2xl border border-purple-400/20 bg-white/[0.07] p-6 shadow-2xl shadow-purple-900/20 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-purple-400/50 hover:bg-purple-500/10">
@@ -117,7 +119,7 @@ export default function Home() {
               </div>
 
               {/* Card 2 */}
-              <div className="w-full max-w-md translate-x-0 rounded-2xl border border-purple-400/20 bg-white/[0.07] p-6 shadow-2xl shadow-cyan-900/20 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-cyan-400/50 hover:bg-purple-500/10 lg:translate-x-8">
+              <div className="w-full max-w-md rounded-2xl border border-purple-400/20 bg-white/[0.07] p-6 shadow-2xl shadow-purple-900/20 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-purple-400/50 hover:bg-purple-500/10 lg:translate-x-8">
                 <div className="mb-4 flex items-center gap-3">
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-purple-500/20 text-xl">
                     🤖
@@ -152,7 +154,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Scroll Indicator */}
+          {/* ================= SCROLL INDICATOR ================= */}
           <a
             href="#about"
             className="absolute bottom-7 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs text-gray-500 transition hover:text-purple-400 md:flex"
@@ -183,7 +185,7 @@ export default function Home() {
         </section>
 
         {/* ================= CONTACT ================= */}
-        <section id="Contact">
+        <section id="contact">
           <Contact />
         </section>
       </div>
