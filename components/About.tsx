@@ -8,17 +8,8 @@ export default function About() {
   return (
     <section id="about" className="bg-black px-6 py-24 text-white">
       <div className="mx-auto grid max-w-7xl items-start gap-12 md:grid-cols-2">
-        {/* Left side */}
-        <div>
-          <img
-            src="/images/user.png.jpg"
-            alt="Tonima Islam Dristy"
-            className="mx-auto h-[420px] w-full rounded-2xl object-cover sm:h-[520px] sm:w-3/4 md:h-[690px]"
-          />
-        </div>
-
-        {/* Right side */}
-        <div>
+        {/* Text - Shows first on mobile, right side on desktop */}
+        <div className="order-1 md:order-2">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-purple-400">
             Get to know me
           </p>
@@ -57,7 +48,7 @@ export default function About() {
             </button>
           </div>
 
-          {/* Skills content */}
+          {/* Skills Content */}
           {activeTab === "skills" && (
             <div className="mt-8 space-y-5">
               <div>
@@ -102,7 +93,7 @@ export default function About() {
             </div>
           )}
 
-          {/* Education content */}
+          {/* Education Content */}
           {activeTab === "education" && (
             <div className="mt-8 space-y-5">
               <div>
@@ -130,6 +121,15 @@ export default function About() {
               </div>
             </div>
           )}
+        </div>
+
+        {/* Image - Shows after text on mobile, left side on desktop */}
+        <div className="order-2 md:order-1">
+          <img
+            src="/images/user.png.jpg"
+            alt="Tonima Islam Dristy"
+            className="mx-auto h-[420px] w-full rounded-2xl object-cover sm:h-[520px] sm:w-3/4 md:h-[690px]"
+          />
         </div>
       </div>
     </section>
