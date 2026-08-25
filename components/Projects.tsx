@@ -141,25 +141,34 @@ const projects = [
 export default function Projects() {
   const [showMore, setShowMore] = useState(false);
 
-  // Show 6 projects initially, or all projects after clicking See More
   const displayedProjects = showMore ? projects : projects.slice(0, 6);
 
   return (
-    <section id="work" className="bg-black px-6 py-24 text-white">
+    <section
+      id="work"
+      className="border-y border-white/5 bg-black/40 px-6 py-24 text-white backdrop-blur-sm"
+    >
       <div className="mx-auto max-w-7xl">
-        {/* Section heading */}
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-purple-400">
-          My Portfolio
-        </p>
+        {/* Section Heading */}
+        <div className="text-center md:text-left">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-purple-400">
+            My Portfolio
+          </p>
 
-        <h2 className="text-4xl font-bold md:text-5xl">My Work</h2>
+          <h2 className="text-4xl font-bold md:text-5xl">My Work</h2>
 
-        {/* Project grid */}
+          <p className="mt-4 max-w-2xl text-base leading-7 text-gray-400 md:text-lg">
+            A collection of projects I have developed across web development,
+            machine learning, IoT, data science, and computer graphics.
+          </p>
+        </div>
+
+        {/* Project Grid */}
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {displayedProjects.map((project) => (
             <div
               key={project.title}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-900/30"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035] shadow-xl shadow-purple-950/10 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-purple-500/40 hover:bg-purple-500/[0.05] hover:shadow-2xl hover:shadow-purple-900/30"
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden">
@@ -167,17 +176,25 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                {/* Image Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-60" />
+
+                {/* Image Glow */}
+                <div className="pointer-events-none absolute inset-0 bg-purple-600/0 transition duration-500 group-hover:bg-purple-600/10" />
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
+                {/* Title */}
+                <h3 className="text-xl font-semibold leading-snug transition-colors duration-300 group-hover:text-purple-300">
+                  {project.title}
+                </h3>
 
-                <p className="mt-3 text-sm leading-6 text-gray-400 whitespace-normal break-words overflow-visible">
+                {/* Description */}
+                <p className="mt-3 text-sm leading-7 text-gray-400">
                   {project.description}
                 </p>
 
@@ -186,42 +203,49 @@ export default function Projects() {
                   {project.technologies.map((technology) => (
                     <span
                       key={technology}
-                      className="rounded-full border border-purple-500/20 bg-purple-500/10 px-3 py-1 text-xs text-purple-300"
+                      className="rounded-full border border-purple-500/20 bg-purple-500/[0.08] px-3 py-1 text-xs text-purple-300 transition-colors duration-300 group-hover:border-purple-400/30"
                     >
                       {technology}
                     </span>
                   ))}
                 </div>
 
-                {/* Project link */}
+                {/* Project Link */}
                 {project.link && (
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gray-300 transition hover:text-purple-400"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gray-300 transition-all duration-300 hover:gap-3 hover:text-purple-400"
                   >
                     View Project
-                    <ExternalLink size={16} />
+                    <ExternalLink
+                      size={16}
+                      className="transition-transform duration-300"
+                    />
                   </a>
                 )}
+
+                {/* Bottom Accent */}
+                <div className="mt-6 h-[2px] w-10 rounded-full bg-purple-500/50 transition-all duration-500 group-hover:w-20 group-hover:bg-purple-400" />
               </div>
             </div>
           ))}
         </div>
 
-        {/* See More / See Less Button */}
+        {/* See More / See Less */}
         {projects.length > 6 && (
-          <div className="mt-12 flex justify-center">
+          <div className="mt-14 flex justify-center">
             <button
               onClick={() => setShowMore(!showMore)}
-              className="inline-flex items-center gap-2 rounded-xl border border-purple-500/50 bg-purple-500/10 px-6 py-3 font-semibold text-purple-300 transition hover:bg-purple-600 hover:text-white"
+              className="group inline-flex items-center gap-2 rounded-xl border border-purple-500/40 bg-purple-500/[0.08] px-7 py-3 font-semibold text-purple-300 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-purple-400/70 hover:bg-purple-600 hover:text-white hover:shadow-lg hover:shadow-purple-900/30"
             >
               {showMore ? "See Less" : "See More"}
+
               <ChevronDown
                 size={18}
                 className={`transition-transform duration-300 ${
-                  showMore ? "rotate-180" : ""
+                  showMore ? "rotate-180" : "group-hover:translate-y-1"
                 }`}
               />
             </button>
