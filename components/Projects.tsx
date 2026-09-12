@@ -6,6 +6,20 @@ import { ExternalLink, ChevronDown } from "lucide-react";
 
 const projects = [
   {
+    title: "Pro3AI – Programme Management Web Application",
+    description:
+      "Contributed to the development of a programme management platform featuring Programme, Resource Management, RAID-D, Stakeholder Management, Contracts, Governance, Budget, and Integrations modules. Developed reusable responsive UI components, navigation, routing, API integrations, and module-specific interfaces using React, TypeScript, Tailwind CSS, and React Router.",
+    image: "/images/Pro3AI.png",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Router",
+      "API Integration",
+    ],
+    link: "https://dev.mustaruusu.com/login",
+  },
+  {
     title: "ASD Detection Using Explainable Machine Learning",
     description:
       "Developed a machine learning framework for ASD screening across multiple age groups using data preprocessing, feature selection, model optimization, and SHAP-based Explainable AI.",
