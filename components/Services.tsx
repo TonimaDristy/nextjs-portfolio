@@ -3,9 +3,9 @@ import { Code2, Database } from "lucide-react";
 const services = [
   {
     icon: Database,
-    title: "Software Engineer Internship",
+    title: "Software Engineer",
     description:
-      "Currently working as a Software Engineer Intern at Mustaruusu Technology Asia, contributing to API integration, backend development, debugging, Git workflows, and responsive user interface development using HTML, CSS, JavaScript, and React.",
+      "Currently working as a Software Engineer at Mustaruusu Technology Asia, contributing to the development of programme management applications through responsive UI development, API integration, backend integration, debugging, testing, and Git/GitHub workflows. Working with React, TypeScript, JavaScript, Python, HTML, CSS, and Tailwind CSS to develop and maintain application features.",
   },
   {
     icon: Code2,
