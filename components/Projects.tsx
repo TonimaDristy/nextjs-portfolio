@@ -9,10 +9,11 @@ const projects = [
     title: "Pro3AI – Programme Management Web Application",
     description:
       "Contributed to the development of a programme management platform featuring Programme, Resource Management, RAID-D, Stakeholder Management, Contracts, Governance, Budget, and Integrations modules. Developed reusable responsive UI components, navigation, routing, API integrations, and module-specific interfaces using React, TypeScript, Tailwind CSS, and React Router.",
-    image: "/images/Pro3AI.png",
+    image: "/images/Pro3AI-Platform.png",
     technologies: [
       "React",
       "TypeScript",
+      "Python",
       "Tailwind CSS",
       "React Router",
       "API Integration",
