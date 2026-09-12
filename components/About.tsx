@@ -119,7 +119,6 @@ export default function About() {
                   </h3>
                   <p className="mt-2 leading-7 text-gray-400">
                     Developed interactive 2D graphics and animated cityscape
-                    projects using C++ and OpenGL.
                   </p>
                 </div>
               </div>
