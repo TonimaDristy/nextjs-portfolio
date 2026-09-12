@@ -44,11 +44,15 @@ export default function About() {
 
             {/* Description */}
             <p className="leading-8 text-gray-400">
-              I am a Computer Science & Engineering graduate from American
-              International University-Bangladesh (AIUB), passionate about
-              building innovative projects and transforming ideas into
-              real-world solutions through modern technologies and hands-on
-              experimentation.
+              I am a Computer Science & Engineering graduate and Software
+              Engineer with professional experience in building and testing
+              full-stack web applications. I specialize in frontend development
+              using React.js, TypeScript, Next.js, and Tailwind CSS, with
+              experience in API integration, backend development, debugging, and
+              responsive UI development. I’m also passionate about Artificial
+              Intelligence, Machine Learning, AI agents, and automation, and
+              enjoy turning ideas into scalable, user-friendly digital
+              solutions.
             </p>
 
             {/* Tabs */}
@@ -78,7 +82,7 @@ export default function About() {
 
             {/* Skills Content */}
             {activeTab === "skills" && (
-              <div className="mt-8 space-y-5">
+              <div className="mt-8 grid gap-5 sm:grid-cols-2">
                 <div className="rounded-xl border border-white/5 bg-white/[0.03] p-5 transition duration-300 hover:border-purple-500/20 hover:bg-purple-500/[0.04]">
                   <h3 className="font-semibold text-purple-400">
                     Web Development
@@ -120,7 +124,6 @@ export default function About() {
                 </div>
               </div>
             )}
-
             {/* Education Content */}
             {activeTab === "education" && (
               <div className="mt-8 space-y-5">
