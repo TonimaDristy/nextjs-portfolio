@@ -164,6 +164,15 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Download CV */}
+              <a
+                href="/CV.pdf"
+                download
+                className="mt-8 inline-flex items-center gap-2 rounded-xl bg-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/20 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-500 hover:shadow-purple-900/40"
+              >
+                <Download size={18} />
+              </a>
+
               {/* Bottom Accent */}
               <div className="mt-8 h-[2px] w-12 rounded-full bg-purple-500/50 transition-all duration-500 group-hover:w-24 group-hover:bg-purple-400" />
             </div>
