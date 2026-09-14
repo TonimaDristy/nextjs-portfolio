@@ -164,12 +164,14 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Download CV */}
+              {/* View CV */}
               <a
-                href="/CV.pdf"
-                download
+                href="https://drive.google.com/file/d/1N6Fo4O9i_WQSxRXVxV_si03cpEj-g0yt/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center gap-2 rounded-xl bg-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/20 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-500 hover:shadow-purple-900/40"
               >
+                View CV
                 <Download size={18} />
               </a>
 
