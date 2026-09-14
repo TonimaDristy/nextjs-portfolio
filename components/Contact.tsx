@@ -1,8 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { Mail, Phone, MapPin, Send, Download } from "lucide-react";
-
+import { Mail, Phone, MapPin, Send, ExternalLink } from "lucide-react";
 export default function Contact() {
   const [isSending, setIsSending] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
@@ -166,13 +165,13 @@ export default function Contact() {
 
               {/* View CV */}
               <a
-                href="https://drive.google.com/file/d/1N6Fo4O9i_WQSxRXVxV_si03cpEj-g0yt/view?usp=sharing"
+                href="https://drive.google.com/file/d/1N6Fo4O9i_WQSxRXVxV_si03cpEj-g0yt/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center gap-2 rounded-xl bg-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/20 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-500 hover:shadow-purple-900/40"
               >
                 View CV
-                <Download size={18} />
+                <ExternalLink size={18} />
               </a>
 
               {/* Bottom Accent */}
